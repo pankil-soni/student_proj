@@ -6,3 +6,4 @@ sqlparse
 tzdata
 secure-smtplib
 email-validator
+db-sqlite3
