@@ -1,5 +1,4 @@
 # build_files.sh
-pip install -r requirements.txt
 
 pip install psycopg2-binary
 sqlite3 db.sqlite .dump > sqlite_dump.sql
