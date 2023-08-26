@@ -6,4 +6,4 @@ sqlparse
 tzdata
 secure-smtplib
 email-validator
-db-sqlite3
+db-sqlite3==3.8.3 
