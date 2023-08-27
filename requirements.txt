@@ -1,9 +1,6 @@
-asgiref
+psycopg2
 Django
 python-dateutil
-six
 sqlparse
-tzdata
 secure-smtplib
 email-validator
-db-sqlite3

@@ -11,10 +11,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-# settings.py
-from dotenv import load_dotenv
-load_dotenv()
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,9 +25,8 @@ SECRET_KEY = 'django-insecure-f569$nx080d0s-k9)y8&35)7p-=a%^*haf$17#1ak6csy1^9ic
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
-# Or * to allow all
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1','localhost']
+
 
 # Application definition
 
@@ -80,14 +75,15 @@ WSGI_APPLICATION = 'loginproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get("DB_NAME"),
-        'USER': os.environ.get("DB_USER"),
-        'PASSWORD': os.environ.get("DB_PASSWORD"),
-        'HOST': os.environ.get("DB_HOST"),
-        'PORT': os.environ.get("DB_PORT"),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "railway",
+        'USER': "postgres",
+        'PASSWORD': "wevr3TlqzkE3Asl3X6jC",
+        'HOST': "containers-us-west-60.railway.app",
+        'PORT': "5485",
     }
 }
+
 
 
 # Password validation
@@ -124,10 +120,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+import os
+
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+# STATICFILES_DIRS = os.path.join(BASE_DIR,"static")
+# STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles_build","static")
 
 
 # Default primary key field type
