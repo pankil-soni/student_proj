@@ -1,6 +1,6 @@
-psycopg2
 Django
 python-dateutil
 sqlparse
 secure-smtplib
 email-validator
+psycopg-binary
