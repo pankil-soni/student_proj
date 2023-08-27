@@ -4,6 +4,5 @@ sqlparse
 secure-smtplib
 email-validator
 psycopg-binary
-psycopg
-psycopg2
 postgres
+
